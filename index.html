@@ -299,7 +299,8 @@
     // -------------------------------------------------
     // GVRM（ Falling アニメで“落下中”のアバター ）
     // -------------------------------------------------
-    const gvrm = await GVRM.load('./20251101-Masa.gvrm', scene, camera, renderer);
+    // gvrmファイルは、Scaniverseでplyファイルを作って、https://github.com/naruya/gaussian-vrm でgvrmに変換してください
+    const gvrm = await GVRM.load('./avatar.gvrm', scene, camera, renderer);
     const character = gvrm.character.currentVrm.scene;
     character.position.set(0, 1, 0);
 
